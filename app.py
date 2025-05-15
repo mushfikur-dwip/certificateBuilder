@@ -23,6 +23,7 @@ def index():
         y_offset = int(request.form.get('y_offset', 285))  #for AIBAITCLUB
         buffer = io.BytesIO()
         c = canvas.Canvas(buffer, pagesize=landscape(A4))
+        c.setTitle(f"{name}'s Certificate")
         width, height = landscape(A4)
 
         # Background image
